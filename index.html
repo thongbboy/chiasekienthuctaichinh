@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TQ - Chia sẻ thông tin tài chính</title>
+    <link rel="stylesheet" href="inex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div id="popup1" >
+        <input type="button" id="popup-close" value="x" onclick="closePopup()"></input>
+        <p>Chúng tớ nghĩ là bạn là người chi tiêu hơi tiết kiệm rồi, nên nới tay tí xíu để bản thân được hưởng thụ hơn bạn nha</p>
+    </div>
+    <div id="popup2" >
+        <input type="button" id="popup-close" value="x" onclick="closePopup()"></input>
+        <p>Chúng tớ nghĩ là bạn là người chi tiêu siêu hợp lí đó, cố gắng phát huy bạn nha</p>
+    </div>
+    <div id="popup3" >
+        <input type="button" id="popup-close" value="x" onclick="closePopup()"></input>
+        <p>Chúng tớ nghĩ là bạn là người chi tiêu hơi hơi mạnh tay rồi, tiết kiệm xíu, cẩn thận cuối tháng là hết tiền bạn ơi</p>
+    </div>
+    <div id="item1">
+        <img src="./s_banner.svg" >
+        <div id="item1-main">
+            <h1>Chia sẻ <br> thông tin tài chính</h1>
+            <p>- Dự án cộng đồng trường THPT Thới Bình -</p>
+        </div>
+    </div> 
+    <div id="item2">
+        <h2>Bạn thuộc tuýp người chi tiêu như thế nào?</h2>
+        <form name="myform">
+            <h3>Mỗi tháng bạn tiêu bao nhiêu tiền nhỉ?</h3>
+            <input type="radio" name="question_01" value="a"><p>Dưới 1 triệu</p><br>
+            <input type="radio" name="question_01" value="b"><p>Từ 1 - 2 triệu</p><br>
+            <input type="radio" name="question_01" value="c"><p>Từ 2 - 3 triệu</p><br>
+            <input type="radio" name="question_01" value="d"><p>Trên 3 triệu</p><br>
+            
+            <h3>Được ba mẹ cho một số tiền kha khá, bạn sẽ</h3>
+            <input type="radio" name="question_02" value="a"><p>Gửi tiết kiệm</p><br>
+            <input type="radio" name="question_02" value="b"><p>Xài hết ngay lập tức</p><br>
+            <input type="radio" name="question_02" value="d"><p>Xài từ từ và để dành cho những ngày khó khắn</p><br>
+            
+            <h3>Hỏi thiệt nè, bạn có từng chơi trò chơi trúng thưởng nào chưa?</h3>
+            <input type="radio" name="question_03" value="a"><p>Khá nhiều lần</p><br>
+            <input type="radio" name="question_03" value="b"><p>Thỉnh thoảng thôi à</p><br>
+            <input type="radio" name="question_03" value="c"><p>Chưa bao giờ</p><br>
+            
+            <h3>Bạn có mua sắm tại các shop không?</h3>
+            <input type="radio" name="question_04" value="a"><p>Có, tớ thích mua sắm cực</p><br>
+            <input type="radio" name="question_04" value="b"><p>Thỉnh thoảng</p><br>
+            <input type="radio" name="question_04" value="c"><p>Hiếm khi</p><br>
+
+            <input type="button" value="Check ngay" onclick="check()" id="check-button">
+        </form>
+    </div>
+    <div id="item3">
+        <h2>Một số kênh Tiktok mảng tài chính</h2>
+        <div id="item3-main">
+        <div class="item3-1">
+            <img src="./nguoiquansat.png" alt="">
+            <h3>Người quan sát</h3>
+        </div>
+        <div class="item3-1">
+            <img src="./sitcom.png" alt="">
+            <h3>Sitcom tài chính</h3>
+        </div>
+        <div class="item3-1">
+            <img src="./viethoang.png" alt="">
+            <h3>Việt Hoàng Stock Official</h3>
+        </div>
+        <div class="item3-1">
+            <img src="./bogau.png" alt="">
+            <h3>Học viện Bò và Gấu</h3>
+        </div>
+        </div>
+
+        <h2>Một số kênh Youtube mảng tài chính</h2>
+        <div id="item3-main">
+        <div class="item3-1">
+            <img src="./tài chính kinh doanh.png" alt="">
+            <h3>Tài chính & Kinh doanh</h3>
+        </div>
+        <div class="item3-1">
+            <img src="./duythanh.png" alt="">
+            <h3>Duy Thanh Nguyen</h3>
+        </div>
+        <div class="item3-1">
+            <img src="./vtv.png" alt="">
+            <h3>VTV24 - Smart Money</h3>
+        </div>
+        <div class="item3-1">
+            <img src="./rum.png" alt="">
+            <h3>Spiderum</h3>
+        </div>
+        </div>
+    </div>
+    <div id="item4">
+        <h2>Góc chia sẻ kiến thức tài chính - kinh tế cơ bản</h2>
+        <p>1. Kinh tế vi mô và vĩ mô <br>
+            <br>
+            Kinh tế học vi mô, kinh tế vi mô, kinh tế tầm nhỏ hay đôi khi được gọi tắt là vi mô (Tiếng Anh: microeconomics), là một phân ngành chủ yếu của kinh tế học, chuyên nghiên cứu về hành vi kinh tế của các chủ thể tham gia vào nền kinh tế (người tiêu dùng, nhà sản xuất) và cách các chủ thể này tương tác với nhau. <br>
+            Một trong những mục tiêu nghiên cứu của kinh tế vi mô là phân tích cơ chế thị trường thiết lập ra giá cả tương đối giữa các mặt hàng và dịch vụ và sự phân phối các nguồn tài nguyên giới hạn giữa nhiều cách sử dụng khác nhau. Kinh tế vi mô phân tích thất bại của thị trường, khi thị trường không vận hành hiệu quả, cũng như miêu tả những điều kiện cần có trong lý thuyết cho việc cạnh tranh hoàn hảo. Những ngành quan trọng trong kinh tế vi mô bao gồm thị trường dưới thông tin bất đối xứng, chọn lựa với sự không chắc chắn và các áp dụng trong kinh tế của lý thuyết trò chơi. <br>
+            Phạm vi nghiên cứu của kinh tế học vi mô bao gồm: <br>
+            - Các lý luận cơ bản cho kinh tế học như cung, cầu, giá cả, thị trường <br>
+            - Các lý thuyết về hành vi của người tiêu dùng <br>
+            - Lý thuyết về hành vi của người sản xuất <br>
+            - Cấu trúc thị trường <br>
+            - Thị trường cạnh tranh hoàn hảo <br>
+            - Thị trường cạnh tranh mang tính độc quyền <br>
+            - Thị trường thiểu số độc quyền <br>
+            - Thị trường độc quyền thuần túy <br>
+            - Thị trường các yếu tố sản xuất: Lao động - vốn - Tài nguyên <br>
+            - Vai trò của Chính phủ trong nền kinh tế thị trường <br>
+            - Các lý luận về trao đổi, phúc lợi kinh tế <br>
+            - Các lý luận về thất bại thị trường <br>
+            <br>
+            Kinh tế học vĩ mô hay là kinh tế tầm lớn (Tiếng Anh: macroeconomics) là một phân ngành của kinh tế học chuyên nghiên cứu về đặc điểm, cấu trúc và hành vi của cả một nền kinh tế nói chung. Kinh tế học vĩ mô và kinh tế học vi mô là hai lĩnh vực chung nhất của kinh tế học. Trong khi kinh tế học vi mô chủ yếu nghiên cứu về hành vi của các cá thể đơn lẻ, như công ty và cá nhân người tiêu dùng, kinh tế học vĩ mô lại nghiên cứu các chỉ tiêu cộng hưởng như GDP, tỉ lệ thất nghiệp, và các chỉ số giá cả để hiểu cách hoạt động của cả nền kinh tế. <br>
+            Kinh tế học vĩ mô nghiên cứu sự vận động và những mối quan hệ kinh tế chủ yếu của một đất nước trên bình diện toàn bộ nền kinh tế quốc dân. Những đối tượng nghiên cứu cụ thể của kinh tế học vĩ mô bao gồm tổng sản phẩm, việc làm, lạm phát, tăng trưởng, chu kỳ kinh tế, vai trò ổn định kinh tế vĩ mô của chính phủ... <br>
+            Kinh tế học vĩ mô sử dụng tích cực phương pháp mô hình hóa. Gần như mỗi một hiện tượng kinh tế vĩ mô lại được mô tả bằng một mô hình riêng với những giả thiết riêng. Do cách nhìn nhận các giả thiết khác nhau, nên trong kinh tế học vĩ mô tồn tại nhiều trường phái với các mô hình đi kèm với các giả thuyết khác nhau. Kinh tế học vĩ mô hiện đại thường sử dụng các phương pháp kinh tế lượng để xây dựng và kiểm chứng các mô hình kinh tế dựa trên số lượng lớn dữ liệu kinh tế. <br>
+            <br>
+            2. Quy luật cung–cầu <br>
+            <br>
+            Cung và cầu là những yếu tố quyết định của bất kỳ giao dịch nào, phản ánh bản chất của thị trường và thể hiện qua giá. <br>
+            
+            Cầu là khối lượng hàng hóa, dịch vụ mà người tiêu dùng cần mua trong một thời kì nhất định tương ứng với giá cả và thu nhập xác định. Ví dụ như ông H mở cửa hàng ăn nền cần một khối lượng thịt lớn để đáp ứng cho hoạt động buôn bán của mình. <br>
+            
+            Cung là khối lượng hàng hóa, dịch vụ hiện có trên thị trường hay có thể đưa ra thị trường trong một thời kì nhất định, tương ứng với mức giá cả, khả năng sản xuất và chi phí sản xuất xác định. Ví dụ như sau mua thu hoạch thì ông B bán 5 tấn khoai lang, còn lại 3 tấn do sự biến động của giá cả thị trường mà ông không bán số khoai còn lại mà ông chờ khi giá cả tăng lên ông mới bán. <br>
+            
+            Quy luật cung cầu là sự điều chỉnh của thị trường với một mức giá cân bằng và một lượng giao dịch cân bằng sẽ được xác định. Khi cầu lớn hơn cung thì giá tăng, cầu nhỏ hơn cung thì giá giảm, cầu bằng cung thì giá về trạng thái công bằng. <br>
+            <br>
+            3. Cổ phiếu và trái phiếu <br>
+            <br>
+            Cổ phiếu là giấy chứng nhận công ty cổ phần trao cho nhà đầu tư hoặc bút toán ghi sổ để xác nhận số tiền nhà đầu tư đã đóng góp vào công ty đó. Cổ phiếu cũng là một sản phẩm Chứng khoán xác nhận quyền sở hữu hợp pháp của cá nhân, tổ chức đối với phần tài sản hoặc phần vốn đã đóng góp vào công ty hay tổ chức phát hành. <br>
+            
+            Phân loại cổ phiếu: <br>
+            Có nhiều cách phân loại cổ phiếu dựa vào các tiêu chí khác nhau như tình trạng phát hành, hình thức và quyền lợi cổ đông, cụ thể như sau:
+            <br>
+            <br>
+            Theo tình trạng phát hành <br>
+            Cổ phiếu được phép phát hành: Là số lượng cổ phiếu tối đa công ty cổ phần được phép phát hành từ khi thành lập cho tới suốt quá trình hoạt động của mình. Số lượng cổ phiếu là bao nhiêu phải được đăng ký và ghi trong Điều lệ công ty. Nếu muốn thay đổi phải được sự đồng ý của đa số cổ đông và phải sửa đổi Điều lệ công ty. <br>
+            Cổ phiếu đã phát hành: Là số lượng cổ phiếu công ty đã bán được trên thị trường và đã thu được toàn bộ tiền bán số cổ phiếu đó. Số lượng cổ phiếu đã phát hành tối đa bằng số lượng cổ phiếu được phép phát hành. <br>
+            Cổ phiếu quỹ: Là cổ phiếu đã được phát hành trên thị trường và do chính công ty phát hành mua lại. Phụ thuộc vào quy định luật pháp của từng quốc gia, số cổ phiếu này sau đó có thể được bán cho các nhà đầu tư khác hoặc phải hủy bỏ. Người nắm giữ cổ phiếu quỹ không được chia cổ thức, không được bỏ phiếu quyết định các sự vụ trong công ty. <br>
+            Cổ phiếu đang lưu hành: Là cổ phiếu đã được phát hành trên thị trường và do cổ đông nắm giữ, được tính toán như sau: <br>
+            Số cổ phiếu đang lưu hành = Số cổ phiếu đã phát hành – Số cổ phiếu quỹ<br>
+            <br>
+            Theo hình thức cổ phiếu <br>
+            Cổ phiếu ghi danh: Là cổ phiếu ghi tên cổ đông sở hữu trên tờ cổ phiếu. Vì vậy, muốn chuyển nhượng nhà đầu tư đăng ký tại cơ quan phát hành và phải được HĐQT cho phép. <br>
+            Cổ phiếu vô danh: Là cổ phiếu không được ghi tên người sở hữu trên tờ cổ phiếu. Vì vậy, nó được tự do chuyển nhượng mà không cần thực hiện thủ tục pháp lý như trên. <br>
+            <br>
+            Theo quyền lợi cổ đông <br>
+            Đây là cách phân loại phổ biến nhất, cổ phiếu được chia thành hai loại gồm cổ phiếu phổ thông (cổ phiếu thường) và cổ phiếu ưu đãi. <br>
+            <br>
+            Cổ phiếu phổ thông <br>
+            Cổ phiếu phổ thông là loại cổ phiếu có số lượng lớn nhất, người sở hữu gọi là cổ đông thường, Những cổ đông này có các quyền lợi như sau: <br>
+            <br>
+            Được chia lợi nhuận theo tỷ lệ phần vốn góp vào công ty và phụ thuộc vào tình hình hoạt động kinh doanh của công ty. <br>
+            Được tham gia Họp Đại hội đồng cổ đông, được tham gia bỏ phiếu quyết định những vấn đề quan trọng của công ty. <br>
+            Có quyền bầu cử và ứng cử vào HĐQT công ty. <br>
+            Trường hợp công ty phá sản, cổ đông thường được nhận đền bù sau khi công ty đã hoàn trả các khoản nợ và sau khi hoàn trả cho cổ đông ưu đãi. <br>
+            Không được trực tiếp rút vốn mà chỉ được phép chuyển nhượng, tặng, thừa kế khoản vốn đã đóng góp. <br> 
+            Được ưu tiên mua khi công ty phát hành đợt cổ phiếu mới. <br>
+            Có quyền triệu tập Đại hội đồng cổ đông bất thường theo luật định. <br>
+            Phải gánh chịu rủi ro cùng công ty tương ứng với phần vốn góp và chịu trách nhiệm giới hạn trong phạm vi phần vốn góp này. <br>
+            <br>
+            Cổ phiếu ưu đãi <br>
+            Cổ phiếu ưu đãi tương tự như cổ phiếu thường, tuy nhiên cổ đông ưu đãi được hưởng một số quyền lợi ưu tiên hơn so với cổ đông thường. Dựa vào quyền lợi được ưu tiên, cổ phiếu ưu đãi được phân loại như sau: <br>
+            <br>
+            Cổ phiếu ưu đãi tích lũy: Cổ đông nắm giữ được đảm bảo thanh toán cổ tức ngay cả khi công ty gặp khó khăn không trả được hoặc chỉ trả một phần cổ tức. Phần còn lại được tích lũy và cộng dồn trả vào những lần sau. Đồng thời, thứ tự trả cổ tức cho cổ đông ưu đãi tích lũy phải trước khi công bố trả cổ tức cho cổ đông thường. <br>
+            Cổ phiếu ưu đãi không tích lũy: Cổ đông nắm giữ sẽ không được cộng dồn và tích lũy trả cổ tức vào năm sau. Nghĩa là, nếu công ty gặp khó khăn không trả hoặc chỉ trả được một phần cổ tức năm nay, số còn lại cũng mất quyền được nhận. <br>
+            Cổ phiếu ưu đãi tham dự: Ngoài được nhận phần cổ tức ưu đãi thông thường, cổ đông nắm giữ sẽ được nhận thêm lợi tức phụ trội khi công ty kinh doanh có lợi nhuận cao. <br>
+            Cổ phiếu ưu đãi không tham dự: Cổ đông nắm giữ chỉ được hưởng cổ tức ưu đãi theo quy định, không được nhận thêm phần lợi tức nào khác. <br>
+            Cổ phiếu ưu đãi có thể mua lại: Công ty có quyền mua lại cổ phiếu này bất kỳ lúc nào, giá mua lại được xác định ngay tại thời điểm phát hành. <br>
+            Cổ phiếu ưu đãi có thể chuyển đổi: Cho phép cổ đông chuyển đổ phần cổ phiếu này thành những dạng chứng khoán khác. <br>
+            Cổ phiếu ưu đãi biểu quyết: Khi tham gia bỏ phiếu quyết định các vấn đề quan trọng của công ty, 1 lá phiếu của cổ đông ưu đãi biểu quyết có giá trị hơn cổ đông thường. <br>
+            Ngoài ra, tất cả cổ đông ưu đãi đều được hưởng các quyền lợi như sau: <br>
+            <br>
+            Thứ tự nhận cổ tức và đền bù khi công ty giải thể, thanh lý, phá sản trước cổ đông thường. <br>
+            Không được tham gia bầu cử, ứng cử vào HĐQT công ty. <br>
+            Không được tham gia bỏ phiếu quyết định những vấn đề quan trọng của công ty (trừ cổ phiếu ưu đãi biểu quyết). <br>
+            <br>
+            Trái phiếu là loại chứng khoán xác nhận nghĩa vụ nợ của người phát hành đối với người sở hữu trái phiếu (trái chủ) trong thời gian xác định với khoản lợi tức quy định. Khoản nợ chính là số tiền người sở hữu bỏ ra để mua trái phiếu. Khi đáo hạn, người phát hành phải trả lợi tức trái phiếu cho người sở hữu. <br>
+            <br>
+            Phân loại trái phiếu: <br>
+            Có nhiều loại trái phiếu, được phân loại dựa trên các tiêu chí khác nhau, cụ thể như sau: <br>
+            Theo người phát hành <br>
+            Trái phiếu Chính phủ hay Công trái: Là trái phiếu do Chính phủ phát hành nhằm huy động nguồn tiền nhàn rỗi của người dân và các tổ chức trong xã hội. Chính Phủ là nhà phát hành uy tín nhất trên thị trường. Hiện nay, trái phiếu Chính phủ đang được đánh giá là loại chứng khoán an toàn và ít rủi ro nhất. <br>
+            Trái phiếu doanh nghiệp: Là trái phiếu do các doanh nghiệp phát hành nhằm huy động vốn cho hoạt động sản xuất kinh doanh. Trái phiếu doanh nghiệp có nhiều loại với kỳ hạn và lãi suất đa dạng. <br>
+            Trái phiếu ngân hàng và các tổ chức tài chính: Là trái phiếu do ngân hàng hoặc các tổ chức tài chính phát hành để huy động vốn. <br>
+            <br>
+            Theo lợi tức <br>
+            Trái phiếu có lãi suất cố định: Là trái phiếu mà lợi tức được tính cố định theo tỷ lệ phần trăm trên mệnh giá. <br>
+            Trái phiếu có lãi suất biến đổi: Là trái phiếu mà lợi tức được trả theo từng thời kỳ có lãi suất khác nhau, lãi suất biến đổi theo mức lãi suất tham chiếu. <br>
+            Trái phiếu có lãi suất bằng không: Là trái phiếu không trả lãi, trái chủ mua vào với mức giá thấp hơn mệnh giá và được nhận lại số tiền đúng bằng mệnh giá khi đáo hạn. <br>
+            Theo hình thức <br>
+            Trái phiếu vô danh: Là trái phiếu mà tên và thông tin trái chủ không được ghi trên trái phiếu và trên sổ sách của nhà phát hành. <br>
+            Trái phiếu ghi danh: Là trái phiếu mà tên và thông tin trái chủ được ghi trên trái phiếu và trong số sách nhà phát hành. <br>
+            Theo mức độ đảm bảo thanh toán <br>
+            Trái phiếu bảo đảm: Là loại trái phiếu mà nhà phát hành dùng tài sản đảm bảo cho việc phát hành. Khi nhà phát hành không còn khả năng trả lợi tức, trái chủ có quyền bán tài sản này để thu hồi lợi tức. Trái phiếu đảm bảo gồm một số loại sau: <br>
+            Trái phiếu cầm cố tài sản: Nhà phát hành phải cầm cố một loại tài sản để đảm bảo cho việc phát hành trái phiếu. Tài sản đó thường là bất động sản, có giá trị lớn hơn tổng mệnh giá những trái phiếu đã phát hành. <br>
+            Trái phiếu ký quỹ: Nhà phát hành thực hiện ký quỹ số chứng khoán dễ chuyển nhượng mà mình sở hữu để đảm bảo cho việc phát hành trái phiếu. <br>
+            Trái phiếu không đảm bảo: Là loại trái phiếu phát hành không đảm bảo bằng tài sản mà đảm bảo bằng uy tín của nhà phát hành. <br>
+            <br>
+            Theo tính chất <br>
+            Trái phiếu có thể chuyển đổi: Là trái phiếu của công ty cổ phần, người mua có quyền chuyển đổi thành cổ phần theo thỏa thuận về thời gian, tỷ lệ chuyển đổi ngay từ khi mua trái phiếu. <br>
+            Trái phiếu có quyền mua cổ phiếu: Cũng là trái phiếu của công ty cổ phần, người mua có quyền mua một số lượng cổ phần nhất định của công ty. <br>
+            Trái phiếu có thể mua lại: Là trái phiếu cho phép nhà phát hành mua lại toàn bộ hoặc một phần trước khi đến hạn thanh toán. <br>
+            <br>
+            4. Tổng sản phẩm quốc nội (GDP) <br>
+            <br>
+            Tổng sản phẩm quốc nội là giá trị sản phẩm vật chất và dịch vụ cuối cùng được tạo ra của nền kinh tế trong một khoảng thời gian nhất định (quý, năm). Điều này có nghĩa trong GDP không tính các giá trị sản phẩm vật chất và dịch vụ đã sử dụng ở các khâu trung gian trong quá trình sản xuất tạo ra sản phẩm. GDP biểu thị kết quả sản xuất do các đơn vị thường trú tạo ra trong lãnh thổ kinh tế của một quốc gia. <br>
+            <br>
+            Nội dung tổng quát của GDP được xét dưới các góc độ khác nhau: <br>
+            <br>
+            – Xét dưới góc độ sử dụng (chi tiêu): GDP là tổng cầu của nền kinh tế gồm tiêu dùng cuối cùng của hộ dân cư, tiêu dùng cuối cùng của Nhà nước, tích luỹ tài sản và chênh lệch xuất nhập khẩu hàng hoá và dịch vụ. <br>
+            – Xét dưới góc độ thu nhập, GDP gồm thu nhập của người lao động từ sản xuất, thuế sản xuất, khấu hao tài sản cố định dùng cho sản xuất và giá trị thặng dư sản xuất trong kỳ. <br>
+            – Xét dưới góc độ sản xuất: GDP bằng giá trị sản xuất trừ đi chi phí trung gian. <br>
+            <br>
+            5. Tốc độ tăng trưởng <br>
+            <br>
+            Tốc độ tăng trưởng có thể hiểu là độ nhanh hay chậm của sự gia tăng tổng sản phẩm quốc nội của quốc gia (GDP) hoặc tổng sản lượng quốc dân hay những quy mô sản lượng quốc gia tính bình quân trên đầu người (PCI) trong một thời gian nhất định. <br>
+            <br>
+            Tăng trưởng kinh tế được hiểu là sự gia tăng của tổng sản phẩm quốc nội của quốc gia hoặc tổng sản lượng quốc dân hay với những quy mô sản lượng quốc gia tính bình quân trên đầu người trong một thời gian nhất định. Sự tăng trưởng kinh tế phụ thuộc vào quá trình tích lũy tài sản cụ thể (vốn, lao động, đất đai) và quá trình đầu tư tài sản có năng suất. <br>
+            <br>
+            Từ những khái niệm trên có thể hiểu tốc độ tăng trưởng kinh tế thực được biểu thị bằng phần trăm thể hiện tốc độ thay đổi trong GDP của một quốc gia từ năm này sang năm khác. Ngoài ra còn một thước đo kinh tế khác đó là tổng sản phẩm quốc dân (GNP) thường được ưu tiên nếu nền kinh tế quốc gia cơ bản phụ thuộc vào thu nhập nước ngoài <br>
+            <br>
+            6. Lạm phát <br>
+            <br>
+            Lạm phát (Tiếng Anh: inflation) là sự tăng mức giá chung một cách liên tục của hàng hóa và dịch vụ theo thời gian[1] và sự mất giá trị của một loại tiền tệ nào đó. Khi mức giá chung tăng cao, một đơn vị tiền tệ sẽ mua được ít hàng hóa và dịch vụ hơn so với trước đây, do đó lạm phát phản ánh sự suy giảm sức mua trên một đơn vị tiền tệ. Khi so sánh với các nước khác thì lạm phát là sự giảm giá trị tiền tệ của một quốc gia này so với các loại tiền tệ của quốc gia khác. Theo nghĩa đầu tiên thì người ta hiểu lạm phát của một loại tiền tệ tác động đến phạm vi nền kinh tế một quốc gia, còn theo nghĩa thứ hai thì người ta hiểu lạm phát của một loại tiền tệ tác động đến phạm vi nền kinh tế sử dụng loại tiền tệ đó. Phạm vi ảnh hưởng của hai thành phần này vẫn là một vấn đề gây tranh cãi giữa các nhà kinh tế học vĩ mô. Ngược lại với lạm phát là giảm phát. Một chỉ số lạm phát bằng 0 hay một chỉ số dương nhỏ thì được người ta gọi là sự "ổn định giá cả". <br>
+            
+            Lạm phát ảnh hưởng đến các nền kinh tế theo nhiều cách tích cực và tiêu cực khác nhau. Tác động tiêu cực của lạm phát bao gồm sự gia tăng chi phí cơ hội của việc tích trữ tiền, và sự không chắc chắn về tình hình lạm phát trong tương lai có thể ngăn cản quyết định đầu tư và tiết kiệm. Nếu lạm phát tăng trưởng đủ nhanh, sự khan hiếm của hàng hóa sẽ khiến người tiêu dùng bắt đầu lo lắng về việc giá cả sẽ tăng cao trong thời gian tới. Tác động tích cực của lạm phát bao gồm việc giảm thiểu tỷ lệ thất nghiệp dựa trên giá cả cứng nhắc. <br>
+            
+            Ở những nền kinh tế phát triển, lạm phát hàng năm vào khoảng 2% – điều này có nghĩa là giá các món hàng tăng trung bình 2% mỗi năm. Vai trò cơ bản của ngân hàng nhà nước (chính sách tiền tệ) và bộ tài chính (chính sách tài khóa) là kiểm soát tỉ lệ này, giữ nó ở một con số dương thấp. <br>
+            <br>
+            7. Lãi suất <br>
+            <br>
+            Lãi suất (Tiếng Anh: interest rate), là chi phí của việc giữ tiền (chi phí cơ hội khi bỏ qua một cơ hội đầu tư) hay là chi phí của quyền sử dụng một đơn vị vốn vay nào đó trong một đơn vị thời gian (tháng, năm), là tỷ lệ mà theo đó tiền lãi được người vay trả cho việc sử dụng tiền mà họ vay từ một người cho vay. Cụ thể, lãi suất (I/m) là phần trăm tiền gốc (P) phải trả cho một số lượng nhất định của thời gian (m) mỗi thời kỳ (thường được tính theo năm). Ví dụ, một công ty nhỏ vay vốn từ một ngân hàng để mua tài sản mới cho doanh nghiệp của mình, và ngược lại người cho vay nhận được tiền lãi theo lãi suất quy định cho việc trì hoãn sử dụng các khoản tiền và thay vào đó bằng việc cho vay nó cho người vay. Lãi suất thường được thể hiện như một tỷ lệ phần trăm của tiền gốc trong một khoảng thời gian một năm.[1] <br>
+            
+            Các mục tiêu lãi suất là một công cụ quan trọng của chính sách tiền tệ và được tính tới khi xử lý các biến số như đầu tư, lạm phát và thất nghiệp. Các ngân hàng trung ương hoặc các ngân hàng dự trữ của các nước nói chung có xu hướng giảm lãi suất khi họ muốn tăng cường đầu tư và tiêu dùng trong nền kinh tế của đất nước. Tuy nhiên, một lãi suất thấp như là một chính sách kinh tế vĩ mô có thể là rủi ro và có thể dẫn đến việc tạo ra một bong bóng kinh tế, trong đó một lượng lớn các đầu tư được đổ vào thị trường bất động sản và thị trường chứng khoán. <br>
+            <br>
+            8. Lãi suất – Lạm phát – Tăng trưởng <br>
+            <br>
+            Có một mối quan hệ ngược chiều giữa lãi suất và tỉ lệ tăng trưởng GDP. Mặt khác, lãi suất có thể ảnh hưởng trực tiếp đến tỉ lệ lạm phát. Vì thế, khi bạn gia tăng lãi suất, lạm phát sẽ có xu hướng đi xuống tuy nhiên đi cùng với nó là kinh tế phát triển chậm lại. Do vậy, không có gì khó hiểu khi việc quy định lãi suất luôn khiến các nhà chức trách phải đau đầu. <br>
+            
+            Ở Mỹ, Cục Dự trữ Liên bang (FED) chịu trách nhiệm quy định lãi suất ngắn hạn và và đó luôn là một trong những thông tin kinh tế được theo dõi nhiều nhất trên thế giới, do đồng đô la là một đồng tiền quốc tế. <br>
+            <br>
+            9. Chính sách tài khóa <br>
+            <br>
+            Chính sách tài khóa (fiscal policy) là một công cụ của chính sách kinh tế vĩ mô nhằm tác động vào quy mô hoạt động kinh tế thông qua biện pháp thay đổi chi tiêu và/hoặc thuế của chính phủ. <br>
+            
+            Vào những năm 1930, Keynes đã lập luận rằng chính phủ cần phải tăng chi tiêu và sẵn sàng chấp nhận thâm hụt ngân sách để chuyển nền kinh tế từ trạng thái thất nghiệp tràn lan sang trạng thái gần với mức toàn dụng. <br>
+            
+            Về mặt lý thuyết, chính sách tăng chi tiêu hay cắt giảm thuế làm tăng tổng cầu thông qua hiệu ứng nhãn tử, qua đó tạo thêm việc làm để đáp ứng mức tổng cầu tăng thêm và làm tăng thu nhập quốc dân từ Y* lên Y1 (như trong hình dưới). Nếu mức hoạt động kinh tế quá cao, hay nền kinh tế quá nóng, chính phủ có thể cắt giảm chi tiêu hoặc tăng thuế để cắt giảm tổng cầu. <br>
+            
+            Mục tiêu chủ yếu của chính sách tài khóa là làm giảm quy mô biến động của sản lượng trong chu kỳ kinh doanh. Mục tiêu này dẫn tới quan điểm cho rằng chính phủ cần vi chỉnh hoạt động của nền kinh tế. <br>
+            <br>
+            10. Chu kì kinh tế <br>
+            <br>
+            Nền kinh tế có những thời kì bùng nổ và khủng hoảng với chu kì khoảng 7 năm. Khởi đầu chu kì là sự bùng nổ kinh tế, sau đó kinh tế phát triển đến cực thịnh, rồi bước vào suy thoái: tăng trưởng âm, phá sản, giải thế, thất nghiệp… <br>
+            <br>
+            11. Chi phí cơ hội <br>
+            <br>
+            Khi thực hiện một hành động gì đó, bạn có thường so sánh lợi ích của hành động ấy so với các hành động khác. Ví dụ, vào tối thứ 6 khi phải làm việc cật lực cho một dự án, bạn có thể nghĩ rằng “Trời đất, mình đáng lẽ nên làm việc gì đó khác.” “Việc khác” ấy – ví dụ là tiệc tùng cùng bạn bè – có giá trị cao, và nó chứng tỏ dự án hiện tại của bạn tốt hơn, hấp dẫn hơn. <br>
+            
+            Giá trị của hành động mà bạn bỏ lỡ được gọi là “chi phí cơ hội”. Vì thế, nếu bạn bỏ một chỗ làm trả lương 120 nghìn đô/năm để bắt đầu lại, chi phí cơ hội của việc bắt đầu lại là 120 nghìn đô/năm. Bạn nên chọn những công việc mang lại thu nhập cao hơn công việc mà mình từ bỏ. <br>
+            <br>
+            12. Lợi thế so sánh <br>
+            <br>
+            Bạn đang phát triển một dự án công nghệ… Bỗng một hôm, khách hàng đến và hỏi rằng “bạn có thể xây dựng cho họ một website không?”. Liệu bạn sẽ đồng ý xây dựng website cho họ hay nhường cơ hội này lại cho người bạn của mình? Làm thế nào để quyết định được? <br>
+            
+            Thông thường một người sẽ tính toán, anh ta sẽ mất bao nhiêu thời gian để xây dựng website kia, và liệu có thể sử dụng thời gian đó để kiếm được nhiều hơn dự án công nghệ đang làm. Sau đó, anh ta mới tính xem người bạn kia có thể phát triển website hiệu quả hơn mình hay không. Nếu người bạn đó có thể mang lại hiệu quả tốt hơn, và dự án công nghệ hiện tại của anh ta mang lại thu nhập cao hơn, anh ta sẽ bỏ qua cơ hội này. <br>
+            
+            Đây được gọi là lý thuyết về lợi thế so sánh. Người bạn của anh chàng kia có lợi thế tốt hơn, và anh ta không có lý do gì để nhận công việc kia. Các quốc gia, doanh nghiệp và mỗi người chỉ nên làm những việc mà mình có thế mạnh, và dành phần còn lại cho người khác.</p> <br>
+    </div>
+</body>
+</html>
